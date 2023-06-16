@@ -72,11 +72,12 @@ func Calculation (a int, b int, act string, flag_a int, flag_b int) {
             if (a < 0 || a > 10) || (b < 0 || b > 10) {
                 fmt.Println("На вход принимаются только числа от 1 до 10 включительно")
             }
-    }
-    
+            flag_a, flag_b = 0, 0
+        }
     if flag_a == 1 {
         fmt.Println(result)
-    } else {
+    }
+    if flag_a == 2 {
         fmt.Println(Arabian_to_roman(result))
     }
 }
